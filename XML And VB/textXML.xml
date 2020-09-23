@@ -1,0 +1,24 @@
+<xml xmlns:s="uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:rs="urn:schemas-microsoft-com:rowset" xmlns:z="#RowsetSchema">
+	<s:Schema id="RowsetSchema">
+		<s:ElementType name="row" content="eltOnly">
+			<s:AttributeType name="ClientId" rs:number="1" rs:nullable="true" rs:maydefer="true" rs:writeunknown="true">
+				<s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="AgentId" rs:number="2" rs:nullable="true" rs:maydefer="true" rs:writeunknown="true">
+				<s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="ClientName" rs:number="3" rs:nullable="true" rs:maydefer="true" rs:writeunknown="true">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:extends type="rs:rowbase"/>
+		</s:ElementType>
+	</s:Schema>
+	<rs:data>
+		<z:row ClientId="1" AgentId="1" ClientName="Mehdi"/>
+		<z:row ClientId="2" AgentId="1" ClientName="Raza"/>
+		<z:row ClientId="3" AgentId="1" ClientName="Tariq"/>
+		<z:row ClientId="4" AgentId="2" ClientName="David"/>
+		<z:row ClientId="5" AgentId="2" ClientName="Martin"/>
+		<z:row ClientId="6" AgentId="2" ClientName="Jones"/>
+	</rs:data>
+</xml>
